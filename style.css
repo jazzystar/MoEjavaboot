@@ -1,9 +1,21 @@
+/*Logo / Header Styles*/
+.master-of-elements {
+    font-family: Comic Sans MS, Comic Sans;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    background-color: forestgreen;
+    padding: 10px;
+    text-align: left;
+}
+
+
 /*Clint's Page Styles*/
 #bodyC{
-    background-color:powderblue;
+    background-color:rgb(79, 134, 130);
 }
 
 .buttons button{
-    background-color:green;
+    background-color:lime;
     color:black;
 }
