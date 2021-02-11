@@ -1,3 +1,5 @@
+/* Behind the scenes look at our style sheet!*/
+
 /*Logo / Header Styles*/
 .master-of-elements {
     font-family: Comic Sans MS, Comic Sans;
@@ -8,14 +10,72 @@
     padding: 10px;
     text-align: left;
 }
-
-
-/*Clint's Page Styles*/
-#bodyC{
-    background-color:rgb(79, 134, 130);
-}
-
+/* Button setup */
 .buttons button{
     background-color:lime;
     color:black;
+}
+
+/* Group Cards */
+.card{
+    padding-top:20px;
+    padding-bottom:40px;
+    max-width: 300px;
+    margin:flex;
+    text-align: center;
+    box-shadow:0px 5px 10px black;
+}
+.card:hover{
+    box-shadow: 0px 8px 16px 0 darkgreen;
+}
+.photos{
+    padding-top:15px;
+    height:240px;
+    width:240px;
+}
+.profileButton{
+    padding-bottom: 5px;
+    border: 2px black;
+    border-radius: 5px;
+    outline:5px;
+    padding:5px;
+    background-color: rgb(50, 110, 30);
+    color:black;
+}
+.profileButton:hover{
+    opacity:0.6;
+}
+
+
+/*Clint's Page Styles*/
+#Cbody{
+    min-height: 1024px;
+    background: linear-gradient(to bottom left, rgb(92, 176, 245), rgb(231, 90, 55));
+    background-size: 600% 100%;
+    animation: gradient 12s linear infinite;
+    animation-direction:alternate;
+    border-color:black;
+    border-width: 5px;
+    border-style: groove;
+    padding: 5px;
+}
+#Cheader{
+    text-align:center;
+    color:white;
+    border-color:black;
+    border-width: 5px;
+    border-style: groove;
+    padding: 5px;
+}
+.Cbio{
+    text-emphasis: bold;
+    color:white;
+}
+.Cpara{
+    color:white;
+}
+@keyframes gradient{
+    0% {background-position: 0%}
+    50% {background-position: 65%}
+    100% {backgorund-position: 100%}
 }
