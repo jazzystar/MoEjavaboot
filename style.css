@@ -59,20 +59,33 @@
     border-style: groove;
     padding: 5px;
 }
+.Cphoto{
+    width:240px;
+    height:240px;
+    border-color:white;
+    border-width: 3px;
+    border-style:ridge;
+
+}
+.Cintro{
+    color:white;
+    text-decoration:underline wavy skyblue;
+    font-size: 26px;
+}
 #Cheader{
     text-align:center;
     color:white;
     border-color:black;
     border-width: 5px;
     border-style: groove;
-    padding: 5px;
-}
-.Cbio{
-    text-emphasis: bold;
-    color:white;
+    
 }
 .Cpara{
     color:white;
+    border-color:black;
+    border-width: 2px;
+    border-style:dotted;
+    font-size: 17px;
 }
 @keyframes gradient{
     0% {background-position: 0%}
