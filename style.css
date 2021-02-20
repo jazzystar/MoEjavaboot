@@ -8,7 +8,7 @@ html{
     overflow-y: scroll;
 }
 #splashPageHeader {
-    
+
     font-family: Comic Sans MS, Comic Sans;
     background-image: url("masterOfElements.jpg");
     background-size: cover;
@@ -25,7 +25,7 @@ a:link { color: #000000; text-decoration: none}
     height: 90px;
     color: #494883;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
-    
+
  }
  .master-of-elements h1{
      font-size: 30px;
@@ -45,7 +45,7 @@ a:link { color: #000000; text-decoration: none}
 .linkDrop ul{
     list-style: none;
     background: #95C57C;
-    
+
 }
 .linkDrop ul li a{
     color: #2F6413;
@@ -54,7 +54,7 @@ a:link { color: #000000; text-decoration: none}
 .linkDrop ul li a:hover{
     color: #1A1951;
     cursor: pointer;
-    
+
 }
 .linkDrop ul li {
     width: 170px;
@@ -71,15 +71,15 @@ a:link { color: #000000; text-decoration: none}
 .linkDrop ul li:hover{
     color: #E2D18E;
     cursor: pointer;
-    
+
 }
 .linkDrop ul ul{
     display: none;
-    
+
 }
 .linkDrop ul li:hover > ul{
     display: block;
-    
+
 }
 
 
@@ -109,7 +109,7 @@ a:link { color: #000000; text-decoration: none}
         color: #6BA24D;
     }
     70%{
-        color: #FFF3C6;    
+        color: #FFF3C6;
     }
     80%{
         color: #4D872E;
@@ -149,7 +149,7 @@ a:link { color: #000000; text-decoration: none}
     margin-left: auto;
     margin-right: auto;
 }
-    
+
 
 .profileButton a{
     color:#FFF3C6;
@@ -346,7 +346,7 @@ a:link { color: #000000; text-decoration: none}
     border-color:black;
     border-width: 5px;
     border-style: groove;
-    
+
 }
 .Cpara{
     color:white;
@@ -375,7 +375,7 @@ a:link { color: #000000; text-decoration: none}
     100%{
         color:cyan;
     }
-    
+
 }
 @keyframes gradient{
     0% {background-position: 0%}
@@ -573,3 +573,24 @@ a:link { color: #000000; text-decoration: none}
       bottom: 0px; transform:rotate(0deg);
     }
 }
+/*These are Thomas's styles*/
+
+#Rosso
+{
+  animation-name: flying;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+ @keyframes flying
+ {
+ 0%
+ {
+ left: 50px;
+ }
+ 100%
+ {
+ left: 250px;
+ }
+ }
