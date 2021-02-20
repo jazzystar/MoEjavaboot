@@ -612,14 +612,14 @@ a:link { color: #000000; text-decoration: none}
 
   @keyframes colorchange{
     0% {
-      top: 0px;
+      top: 50px;
     }
     50% {
-      top: 249px;
-      width: 130px;
-      height: 70px;
+      top: 100px;
+      width: 100px;
+      height: 30px;
     }
     100% {
-      top: 0px;
+      top: 50px;
     }
   }
