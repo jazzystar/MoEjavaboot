@@ -595,8 +595,8 @@ a:link { color: #000000; text-decoration: none}
  }
  }
  #ball {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     margin: 50px auto;
     position: relative;
     border-radius: 50%;
@@ -605,12 +605,12 @@ a:link { color: #000000; text-decoration: none}
       #ccffff,
       #ffcccc
     );
-    animation-name: bounce;
-    animation-duration: 1s;
+    animation-name: colorchange;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
   }
 
-  @keyframes bounce{
+  @keyframes colorchange{
     0% {
       right: 250px;
     }
