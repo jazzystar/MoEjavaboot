@@ -612,13 +612,13 @@ a:link { color: #000000; text-decoration: none}
 
   @keyframes bounce{
     0% {
-      top: -350px;
+      right: -150px;
     }
     50% {
-      top: -350px;
+      right: -450px;
 
     }
     100% {
-      top: -350px;
+      right: -250px;
     }
   }
