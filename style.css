@@ -595,8 +595,8 @@ a:link { color: #000000; text-decoration: none}
  }
  }
  #ball {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin: 50px auto;
     position: relative;
     border-radius: 50%;
@@ -607,7 +607,7 @@ a:link { color: #000000; text-decoration: none}
     );
     animation-name: bounce;
     animation-duration: 1s;
-    animation-iteration-count: 3;
+    animation-iteration-count: infinite;
   }
 
   @keyframes bounce{
@@ -615,9 +615,9 @@ a:link { color: #000000; text-decoration: none}
       top: 0px;
     }
     50% {
-      top: 249px;
-      width: 130px;
-      height: 70px;
+      top: 0px;
+      width: 250px;
+      height: 250px;
     }
     100% {
       top: 0px;
