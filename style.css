@@ -598,8 +598,8 @@ a:link { color: #000000; text-decoration: none}
     width: 50px;
     height: 50px;
     margin: 50px auto;
-    top: 150px;
-    right: 1500px;
+    top: 100px;
+    right: 1300px;
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(
@@ -614,8 +614,8 @@ a:link { color: #000000; text-decoration: none}
 
   @keyframes colorchange{
     0% {
-      top: 150px;
-      right:1500px;
+      top: 100px;
+      right:1300px;
     }
     50% {
       top: 250px;
