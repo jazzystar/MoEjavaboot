@@ -338,6 +338,7 @@ a:link { color: #000000; text-decoration: none}
     color:white;
     text-decoration:underline wavy skyblue;
     font-size: 26px;
+    animation: rainbowtext 20s alternate infinite;
 }
 #Cheader{
     text-align:center;
@@ -353,6 +354,28 @@ a:link { color: #000000; text-decoration: none}
     border-width: 2px;
     border-style:dotted;
     font-size: 17px;
+}
+
+@keyframes rainbowtext{
+    0%{
+        color:orange;
+    }
+    20%{
+        color:blue;
+    }
+    40%{
+        color:pink;
+    }
+    60%{
+        color:lime;
+    }
+    80%{
+        color:red;
+    }
+    100%{
+        color:cyan;
+    }
+    
 }
 @keyframes gradient{
     0% {background-position: 0%}
