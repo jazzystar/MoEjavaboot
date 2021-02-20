@@ -598,6 +598,8 @@ a:link { color: #000000; text-decoration: none}
     width: 50px;
     height: 50px;
     margin: 50px auto;
+    top: 150px;
+    right: 2500px;
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(
