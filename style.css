@@ -613,6 +613,7 @@ a:link { color: #000000; text-decoration: none}
   @keyframes colorchange{
     0% {
       top: 50px;
+      right:250px;
     }
     50% {
       top: 100px;
