@@ -600,7 +600,7 @@ a:link { color: #000000; text-decoration: none}
     margin: 50px auto;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(
+    background: Thomas_animation.jpg(
       35deg,
       #ccffff,
       #ffcccc
@@ -613,7 +613,7 @@ a:link { color: #000000; text-decoration: none}
   @keyframes colorchange{
     0% {
       top: 150px;
-      right:150px;
+      right:450px;
     }
     50% {
       top: 250px;
