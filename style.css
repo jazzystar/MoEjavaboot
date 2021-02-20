@@ -617,7 +617,7 @@ a:link { color: #000000; text-decoration: none}
       top: 100px;
       right:1250px;
     }
-    50% {
+    100% {
       top: 250px;
       right: 250px;
       width: 100px;
