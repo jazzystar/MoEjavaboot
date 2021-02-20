@@ -616,12 +616,10 @@ a:link { color: #000000; text-decoration: none}
     }
     50% {
       right: 250px;
-      background: linear-gradient
-      (
-        55deg,
+      background: linear-gradient(
+        95deg,
         #ccffff,
         #ffcccc
-
       );
     }
     100% {
