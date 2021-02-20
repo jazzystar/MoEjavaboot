@@ -148,8 +148,10 @@ a:link { color: #000000; text-decoration: none}
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    
 }
+    
+
+
 
 /* Group Cards */
 .card{
@@ -195,110 +197,238 @@ a:link { color: #000000; text-decoration: none}
     background-color: #1A1951;
     box-shadow: 0px 6px 8px #1A1951;
 }
-.profileButton a{
-    color:#FFF3C6;
-}
+
 .profileButton:hover{
     opacity:0.6;
 }
-.diskDrive{
-    width: 240px;
-    height: 10px;
-    position: relative;
-    background-color: black;
-    float: left;
-    top: 42px;
-    left: 60px;
-    box-shadow: 0px 6px 8px black;
+
+
+/*Clint's Page Styles*/
+#Cbody{
+    min-height: 1024px;
+    background: linear-gradient(to bottom left, rgb(92, 176, 245), rgb(231, 90, 55));
+    background-size: 600% 100%;
+    animation: gradient 12s linear infinite;
+    animation-direction:alternate;
+    border-color:black;
+    border-width: 5px;
+    border-style: groove;
+    padding: 5px;
 }
-/* Group Cards */
-#whoAreTheMasters{
-    width: 1000px;
-    padding-bottom: 100px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    position: relative;
-    top: 50px;
+.Cphoto{
+    width:240px;
+    height:240px;
+    border-color:white;
+    border-width: 3px;
+    border-style:ridge;
+
+}
+.Cintro{
+    color:white;
+    text-decoration:underline wavy skyblue;
+    font-size: 26px;
+}
+#Cheader{
+    text-align:center;
+    color:white;
+    border-color:black;
+    border-width: 5px;
+    border-style: groove;
+    
+}
+.Cpara{
+    color:white;
+    border-color:black;
+    border-width: 2px;
+    border-style:dotted;
+    font-size: 17px;
+}
+@keyframes gradient{
+    0% {background-position: 0%}
+    50% {background-position: 65%}
+    100% {backgorund-position: 100%}
+}
+
+/*Jasmine's Styles*/
+
+#jasmineBody{
+    padding: 10px;
+    margin: 10px;
+    border: 12px double #a5b6b4;
+    padding: 30px;
+    background-color: white
+}
+.jasmine-head {
+    background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
+    padding: 30px;
+    color:#7d8584
+}
+#jasmine-head-border {
+    border-bottom: 12px solid #a5b6b4;
+}
+.jasminePic img{
+    margin: 10px;
+    padding: 10px;
+    border: 6px solid #7d8584;
+    width: 200px;
+    height: 240px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #9A9ABE;
-    border-radius: 10px;
-    margin-top: 600px;
-    border-width: 6px;
-    border-color: black;
-    border-style: solid;
-    text-align: center;
 }
-#whoAreTheMasters h2{
+#JazGrid{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-items: center;
+    align-items: center;
+
+}
+.jasmineP {
+    border-top: 6px solid #a5b6b4;
+    padding: 5px;
+    color: #7d8584;
+    margin: 5px;
+}
+.jasmineAnchor-tag {
+    border: 8px solid aqua;
+    padding: 15px;
+    filter: brightness(85%);
+}
+.jasmineBio{
+    color:#7d8584;
+    margin: 10px;
+    padding: 5px;
+}
+#jasmineOL{
+    color:#7d8584;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 6px solid #a5b6b4;
+}
+.jasmineButton{
+    height: 20px;
+    width: 150px;
+    justify-items: center;
+    align-items: center;
     text-align: center;
+    color: #7d8584;
+    background-color: #CCFFFF;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display:inline-flex;
+}
+.jasmineButton:hover{
+    color: #FFCCCC;
+    opacity: 0.6;
+}
+/*code taken and modified from https://css-tricks.com/the-shapes-of-css/*/
+#star-blue {
+    margin: 50px 0;
     position: relative;
-    margin-bottom: 1.5rem;
-    font-size: 50px;
-}
-#whoAreTheMasters p{
-    font-size: 30px;
-    margin: auto;
-}
-.emiClass img{
-   margin-left:1250px;
-   position: relative;
-   bottom:140px;
-}
-.headBandClass{
+    display: block;
+    color: #83e7e7;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #83e7e7;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+    animation: bluestar 5s ease 0s infinite alternate;
+  }
+  #star-blue:before {
+    border-bottom: 80px solid #83e7e7;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  #star-blue:after {
+    position: absolute;
+    display: block;
+    color: #83e7e7;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #83e7e7;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  @keyframes bluestar{
+      0%{
+        top:0px; transform:rotate(0deg);
+      }
+      25%{
+        top: 25px; transform:rotate(360deg);
+      }
+      50%{
+        top: 50px; transform:rotate(-360deg);
+      }
+      100%{
+        top: 0px; transform:rotate(0deg);
+      }
+  }
+  #star-pink {
+    margin: 50px 0;
     position: relative;
-    width: 460px;
-    height: 100px;
-    right: 30px;
-    bottom: 15px;
-   
+    display: block;
+    color: #ffccd7;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #ffccd7;
+    ;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+    animation: pinkstar 5s ease 0s infinite alternate;
+  }
+  #star-pink:before {
+    border-bottom: 80px solid #ffccd7;
+    ;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  #star-pink:after {
+    position: absolute;
+    display: block;
+    color: #ffccd7;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #ffccd7;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  @keyframes pinkstar{
+    0%{
+      bottom:0px; transform:rotate(0deg);
+    }
+    25%{
+      bottom: 25px; transform:rotate(-360deg);
+    }
+    50%{
+      bottom: 50px; transform:rotate(360deg);
+    }
+    100%{
+      bottom: 0px; transform:rotate(0deg);
+    }
 }
-
-#whatIsMaster{
-    width: 1000px;
-    padding-bottom: 100px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #9A9ABE;
-    border-radius: 10px;
-    border-width: 6px;
-    border-color: black;
-    border-style: solid;
-    text-align: center;
-    bottom: 90px;
-}
-#whatIsMaster h2{
-    text-align: center;
-    position: relative;
-    margin-bottom: 1.5rem;
-    font-size: 50px;
-}
-#whatIsMaster p{
-    font-size: 30px;
-    margin: auto;
-}
-.emiClassWhat img{
-    margin-left:1250px;
-   position: relative;
-   bottom:290px;
-}
-
-/*This is the main content of the page*/
-
-/*This is the footer content*/
-#feeter{
-    width: auto;
-    height: 70px;
-    background-color: #2F6413;
-    text-align: center;
-}
-/*This is the footer content*/
-
-
-
-
-
-
-/*These are Griffin's styles, no taking jk steal away ;)*/

@@ -3,38 +3,11 @@
     
 
     <head>
+        <link rel="stylesheet" type="text/css"href="style.css">
         <title>MasterofElements.com</title>
         <link rel="icon" type="image/png" href="emiLogo.png" />
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
-    <style>
-        .jasmine-head {
-            border-bottom: 12px solid aqua;
-            padding: 30px;
-            filter: brightness(85%);
-        }
-        
-
-        p {
-            font: verdana;
-            font-size: large;
-            border-top: 6px solid lightskyblue;
-            border-bottom: 6px solid lightskyblue;
-            padding: 30px;
-        }
-
-        .body-class {
-            border: 12px double lightskyblue;
-            padding: 30px;
-            background-color: white;
-        }
-
-        .anchor-tag {
-            border: 8px solid aqua;
-            padding: 15px;
-            filter: brightness(85%);
-        }
-    </style>
     <body>
         
         <div Class="master-of-elements">
@@ -61,27 +34,31 @@
                     </li>
                 </ul>
             </div>
+    <body>
         </div>
-        <div class="body-class">
-        <h1 class="jasmine-head">
+        <div>
+        <h1 class="jasmine-head" id="jasmine-head-border">
             Jasmine's Page
         </h1>
-        <div>
-            <p>Some of my favorite games are <br>
-            <ol>
-                <ul>Mass Effect</ul>
-                <ul>Mass Effect 2</ul>
-                <ul>Mass Effect 3</ul>
-                <ul>Mass Effect Andromeda</ul>
-                <aside>If you can't tell yet I love Mass Effect and you can FIGHT me</aside>
+        <div class="jasminePic" id="JazGrid">
+            <p><i id="star-blue"></i></p>
+            <img src="JasminePhoto.jpg" alt="A picture of Jasmine with Purple hair and yellow sunglasses.">
+            <p><i id="star-pink"></i></p>
+        </div>
+        <div id="jasmineBody">
+            <p class="jasmineBio">
+                Hi, my name is Jasmine Reyes! I am a sophmore at Boise State University. I am from Twin Falls, Idaho, which is south of Boise 
+                but higher in elevation. Art is my favorite thing. I really enjoy traditional mediums.
+            </p>
+            <p class="jasmineP">Above I used a id to resize my picture <br>
+            <ol id="jasmineOL">
+                <ul>I used a class to do the h1.</ul>
+                <ul>The borders around the body are a different id.</ul>
+                <ul>I'm not quite sure what I'm doing but it sure is something.</ul>
             </ol>
             </p>
         </div>
-        <br>
-        <section>
-            <a href="index.html" class="anchor-tag">Home</a>
-        </section>
+        <a href="grouppage.html" class="jasmineButton">Back to Group Page</a>
     </div>
     </body>
-
-    </html>
+</html>
