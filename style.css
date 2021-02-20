@@ -151,8 +151,115 @@ a:link { color: #000000; text-decoration: none}
 }
     
 
+.profileButton a{
+    color:#FFF3C6;
+}
+
+.diskDrive{
+    width: 240px;
+    height: 10px;
+    position: relative;
+    background-color: black;
+    float: left;
+    top: 42px;
+    left: 60px;
+    box-shadow: 0px 6px 8px black;
+}
+
+#whoAreTheMasters{
+    width: 1000px;
+    padding-bottom: 100px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9A9ABE;
+    border-radius: 10px;
+    margin-top: 600px;
+    border-width: 6px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+#whoAreTheMasters h2{
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: 50px;
+}
+#whoAreTheMasters p{
+    font-size: 30px;
+    margin: auto;
+}
+
+.emiClass img{
+    margin-left:1250px;
+    position: relative;
+    bottom:140px;
+}
+
+.headBandClass{
+    position: relative;
+    width: 460px;
+    height: 100px;
+    right: 30px;
+    bottom: 15px;
+}
+
+#whatIsMaster{
+    width: 1000px;
+    padding-bottom: 100px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9A9ABE;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    bottom: 90px;
+}
+
+#whatIsMaster h2{
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: 50px;
+}
+
+#whatIsMaster p{
+    font-size: 30px;
+    margin: auto;
+}
+
+#whatIsMaster{
+    width: 1000px;
+    padding-bottom: 100px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+}
+
+.emiClassWhat img{
+    margin-left:1250px;
+   position: relative;
+   bottom:290px;
+}
 
 
+
+#feeter{
+    width: auto;
+    height: 70px;
+    background-color: #2F6413;
+    text-align: center;
+}
 /* Group Cards */
 .card{
     width: 400px;
@@ -172,6 +279,7 @@ a:link { color: #000000; text-decoration: none}
 .card h4{
     font-size: 30px;
 }
+
 .photos:hover{
     box-shadow: 0px 16px 32px 0 #FFF3C6;
 }
@@ -200,6 +308,9 @@ a:link { color: #000000; text-decoration: none}
 
 .profileButton:hover{
     opacity:0.6;
+}
+.profileButton a{
+    color:#FFF3C6;
 }
 
 
@@ -274,6 +385,13 @@ a:link { color: #000000; text-decoration: none}
     height: 240px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #9A9ABE;
+    border-radius: 10px;
+    border-width: 6px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    bottom: 90px;
 }
 #JazGrid{
     display: grid;
