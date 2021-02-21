@@ -604,8 +604,8 @@ a:link { color: #000000; text-decoration: none}
     border-radius: 50%;
     background: linear-gradient(
       35deg,
-      #ccffff,
-      #ffcccc
+      #000000,
+      #00F14E
     );
     animation-name: colorchange;
     animation-duration: 5s;
