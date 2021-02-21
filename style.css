@@ -1,4 +1,4 @@
-/*These are Griffin's styles, no taking jk steal away ;)*/
+/*These are the home page styles*/
 /*This is the header styles*/
 *{
     margin: 0;
@@ -313,6 +313,81 @@ a:link { color: #000000; text-decoration: none}
     color:#FFF3C6;
 }
 
+/*These are Griffin's styles, no taking jk steal away ;)*/
+#Gbody{
+    width: 100%;
+    height: 100vh;
+    background: #C2E3B0;
+}
+@keyframes inTheRainbows{
+    0%{
+        background-position:20%;
+    }
+    50%{
+        background-position: 66%;
+    }
+    100%{
+        background-position: 95%;
+    }
+}
+.gHeader{
+    top: 30px;
+    text-align: center;
+    width: 500px;
+    position: relative;
+    background: linear-gradient(35deg, #494883,#6BA24D,#BBA759, #9A9ABE,#2F6413,#FFF3C6);
+    background-size: 300%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    color: white;
+    animation: inTheRainbows 10s ease-in-out infinite;
+}
+.gHeader h1{
+    position: relative;
+    bottom: 10px;
+}
+#gMain{
+    text-align: center;
+    list-style-type: none;
+    margin: 4rem;
+    width: 960px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #6D6C9E;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 14px 16px #6D6C9E;
+    
+}
+@keyframes leftToRight{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 100%;
+    }
+    50%{
+        left: 0%;
+    }
+    75%{
+        left: -100%;
+    }
+    
+    100%{
+        left: 0%;
+    }
+}
+#gMain ul{
+    list-style-type: none;
+}
+#gMain img{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    animation: leftToRight 10s infinite;
+}
+/*These are Griffin's styles, no taking jk steal away ;)*/
 
 /*Clint's Page Styles*/
 #Cbody{
@@ -575,23 +650,25 @@ a:link { color: #000000; text-decoration: none}
 }
 /*These are Thomas's styles*/
 
-#Rosso
-{
+#Rosso img{
+  position: relative;
   animation-name: flying;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 
  @keyframes flying
  {
- 0%
- {
- left: 50px;
+ 0%{
+ left: 0%;
  }
- 100%
- {
- left: 250px;
+ 
+ 50%{
+     left: 150%;
+ }
+ 
+ 100%{
+ position: absolute;
  }
  }
  #ball {
