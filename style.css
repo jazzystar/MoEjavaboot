@@ -627,31 +627,32 @@ a:link { color: #000000; text-decoration: none}
     40%
     {
       top: 100px;
-      right:750px;
+      right:800px;
       width: 50px;
       height: 50px;
     }
     60%
     {
         top: 250px;
-        right: 500px;
+        right: 650px;
         width: 100px;
         height: 30px;
     }
     80%
     {
     top: 100px;
-    right:350px;
+    right:550px;
     width: 50px;
     height: 50px;
 
     }
+
     100%
      {
-      top: 250px;
-      right: 250px;
-      width: 100px;
-      height: 30px;
+      top: 300px;
+      right: 450px;
+      width: 0px;
+      height: 0px;
     }
 
   }
