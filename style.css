@@ -64,6 +64,8 @@ a:link { color: #000000; text-decoration: none}
     line-height: 50px;
     color: #2F6413;
     position: relative;
+    right: 90px;
+    top: -10px;
     float: left;
     font-size: 25px;
     background: rgba(149, 197, 124, 0.3);
@@ -171,7 +173,7 @@ a:link { color: #000000; text-decoration: none}
     padding-bottom: 100px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    position: relative;
+    position:;
     top: 50px;
     margin-left: auto;
     margin-right: auto;
