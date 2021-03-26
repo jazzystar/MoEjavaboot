@@ -135,7 +135,7 @@ if(enemyin = 6 && enemyHand < 17)
   document.getElementById("enemyHand").innerHTML = "Dealer Hand =" + enemyHand;
   document.getElementById("carde6img").src = parseInt(Math.random()*4) + ".jpg";
 }
-if(enemyHand > 17)
+if(enemyHand >= 17)
 {
   gameOver();
 
