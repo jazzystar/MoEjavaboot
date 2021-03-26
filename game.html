@@ -1,4 +1,161 @@
-<!DOCTYPE html>
-<!--This is the game html: Now on a new page called game.html, create and link to a javascript file called game.js 
-that contains a simple game that uses a similar kind of random number generator but has an interesting core game loop to play 
-(for example card games like war and blackjack, dice rolling games, number guessing games, etc. would all satisfy this requirement).-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="game.css">
+    <title>BlackJack</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <h1 id='info' class="display-4">Play BlackJack</h1>
+        <div class='row'>
+            <div class='col'>
+                <p id='playerHand' class="lead">Player Hand = 0</p>
+            </div>
+            <div class='col'>
+                <p id='enemyHand' class="lead">Enemy Hand = 0</p>
+            </div>
+        </div>
+      </div>
+
+      <div class='custom-banner container-fluid'>
+
+        <p class='lead'>Player Cards</p>
+      </div>
+
+      <div class="card-custom-container card-group">
+        <div class="card1">
+          <img id="card1img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="card1name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="card2">
+          <img id="card2img"src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="card2name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="card3">
+          <img id="card3img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="card3name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="card4">
+          <img id="card4img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="card4name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="card5">
+          <img id="card5img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="card5name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="card6">
+          <img id="card6img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="card6name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='custom-banner container-fluid'>
+
+        <p class='lead'>Enemy Cards</p>
+      </div>
+
+      <div class="card-custom-container card-group">
+        <div class="carde1">
+          <img id="carde1img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="carde1name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="carde2">
+          <img  id="carde2img"src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="carde2name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+          </div>
+        </div>
+        <div class="carde3">
+          <img id="carde3img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="carde3name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+
+          </div>
+        </div>
+        <div class="carde4">
+          <img  id="carde4img" src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="carde4name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+
+          </div>
+        </div>
+        <div class="carde5">
+          <img  id="carde5img"src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="carde5name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+
+          </div>
+        </div>
+        <div class="carde6">
+          <img  id="carde6img"src="back.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="carde6name">Number</h5>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"></small>
+
+          </div>
+        </div>
+      </div>
+
+    <div class="button-cont">
+      <button id='Hit' type="button" class="btn btn-primary" disabled>Hit</button>
+      <button id='Stay' type="button" class="btn btn-danger" disabled>Stay</button>
+      <button id='Start' type="button" class="btn btn-success">Start</button>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
