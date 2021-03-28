@@ -10,12 +10,18 @@ html{
 #splashPageHeader {
 
     font-family: Comic Sans MS, Comic Sans;
-    background-image: url("masterOfElements.jpg");
     background-size: cover;
+    background-image: url(masterOfElements.jpg);
     background-position: center center;
     background-repeat: no-repeat;
+    width: 100%;
     height: 85vh;
     background-color: #C2E3B0;
+}
+
+#headerImage{
+    width: 100%;
+    height: 80vh;
 }
 
 a:link { color: #000000; text-decoration: none}
@@ -128,7 +134,7 @@ a:link { color: #000000; text-decoration: none}
 #masterContent{
     flex: 1;
     max-width: 100%;
-    height: 2200px;
+    height: 100%;
     background: #95C57C;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -140,6 +146,7 @@ a:link { color: #000000; text-decoration: none}
     font-size:  50px;
     text-align: center;
     animation-name: inRainbows;
+    position: relative;
     animation-duration: 1s;
     animation-iteration-count:infinite;
     width: 600px;
@@ -160,28 +167,21 @@ a:link { color: #000000; text-decoration: none}
     height: 10px;
     position: relative;
     background-color: black;
-    float: left;
-    top: 42px;
-    left: 60px;
+    left: 40px;
     box-shadow: 0px 6px 8px black;
 }
 
 #whoAreTheMasters{
-    width: 1000px;
-    padding-bottom: 100px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    width: auto;
     position: relative;
-    top: 50px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #9A9ABE;
     border-radius: 10px;
-    margin-top: 600px;
+    margin-top: 60px;
     border-width: 6px;
     border-color: black;
     border-style: solid;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #whoAreTheMasters h2{
@@ -210,20 +210,16 @@ a:link { color: #000000; text-decoration: none}
 }
 
 #whatIsMaster{
-    width: 1000px;
-    padding-bottom: 100px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    width: auto;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #9A9ABE;
     border-radius: 10px;
+    margin-top: 60px;
     border-width: 6px;
     border-color: black;
     border-style: solid;
     text-align: center;
-    bottom: 90px;
+    margin-bottom: 10px;
 }
 
 #whatIsMaster h2{
@@ -238,19 +234,6 @@ a:link { color: #000000; text-decoration: none}
     margin: auto;
 }
 
-#whatIsMaster{
-    width: 1000px;
-    padding-bottom: 100px;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    position: relative;
-}
-
-.emiClassWhat img{
-    margin-left:1250px;
-   position: relative;
-   bottom:290px;
-}
 
 
 
@@ -261,11 +244,40 @@ a:link { color: #000000; text-decoration: none}
     text-align: center;
 }
 /* Group Cards */
+@media (max-width: 1600px){
+    .cardAlignment{
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+        column-count: 2 !important;
+    }
+}
+@media (max-width: 900px){
+    .cardAlignment{
+        display: flex !important;
+        flex-direction: column !important;  
+    }
+    #whoAreTheMasters h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #whatIsMaster h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #masterContent h1{
+        width: 400px;
+    }
+}
+.cardAlignment{
+    display: flex;
+    flex-direction: row;
+}
 .card{
     width: 400px;
     margin-top: 70px;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
     text-align: center;
     background-color: #9A9ABE;
     box-shadow:0px 10px 15px #736016;
@@ -273,8 +285,6 @@ a:link { color: #000000; text-decoration: none}
     border-style: solid;
     border-color: black;
     border-radius: 15px;
-    float: right;
-   float: left;
 }
 .card h4{
     font-size: 30px;
@@ -294,8 +304,9 @@ a:link { color: #000000; text-decoration: none}
     border-color: black;
 }
 .profileButton{
-    float: right;
+    left: 35px;
     width: 70px;
+    position: relative;
     height: 70px;
     border-radius: 50%;
     border: 2px black;
