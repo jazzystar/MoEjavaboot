@@ -2,61 +2,34 @@
 and gives back a random number when they click a button (for example, if I enter 1 and I00 as the range, I should get a random number 
 from 1 to 100 back in a way that is visible to me from a browser).  Indicate where a-d occur in your WDD.*/
 
-//<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-const htmlBtn = document.getElementById('HTMLBTN');
-htmlBtn.addEventListener('click', htmlChange);
-const cssBtn = document.getElementById('CSSBTN');
-cssBtn.addEventListener('click', cssChange);
-const randNum = document.getElementById('randNumber');
-const randNumBtn = document.getElementById('RANDBTN');
-randNumBtn.addEventListener('click', randNumGen);
-const feedBtn = document.getElementById('FEEDBTN');
-feedBtn.addEventListener('click', feedBack);
-const form = document.getElementById("formCtrl");
 
-var clicked = false;
+var randCssBtn = document.getElementById('HTMLBTN').innerHTML;
+var randHtmlBtn = document.getElementById('CSSBTN').innerHTML;
+var randomNum = 3;
+var bgColor = document.getElementById('body').innerHTML;
 
-function cssChange(){
-    if(!clicked){
-        cssBtn.style.backgroundColor = "#090";
-        clicked = true;
+
+randCssBtn.onclick = function () {
+    changeCSS()
+};
+
+function changeCSS() {
+    if (randomNum <= 3) {
+        document.body.style.background = "#f3f3f3";
+        randCssBtn.innerHTML.backgroundColor = "Blue";
+        randHtmlBtn.innerHTML.backgroundColor = "Blue";
     }
-    else if(clicked){
-        cssBtn.style.backgroundColor = "#00ff00";
-        clicked = false;
+    else if (randomNum < 3 && randomNum <= 6) {
+        random.body.style.backgroundColor = "White";
+        randCssBtn.style.backgroundColor = "DarkGreen";
+        random.style.backgroundColor = "DarkGreen";
     }
-}
-
-function htmlChange(){
-    //document.write("This is working");
-    if(!clicked){
-        htmlBtn.textContent = "This has changed!";
-    } else{
-        htmlBtn.textContent = "Hit me!"
+    else {
+        bgColor.body.style.backgroundColor = "Black";
+        randCssBtn.style.backgroundColor = "PaleGreen";
+        randHtmlBtn.style.backgroundColor = "PaleGreen";
     }
-
-}
-
-function randNumGen(){
-    var rand = parseInt(Math.random() * 100);
-    
-        if(rand <= 25){
-            randNum.textContent = "On the lower side: " + rand;
-        }
-        else if(rand >= 36 && rand <= 68){
-            randNum.textContent = "Not bad: " + rand;
-        }
-        else if(rand == 69){
-            randNum.textContent = "Nice: " + rand;
-        }
-        else if(rand >= 100 && rand >= 70){
-            randNum.textContent = "Pretty good: " + rand;
-        }
-}
-
-function feedBack(){
-    alert("Then you should eat it.");
-    window.location.reload();
 }
 //document.getElementById("card1name").innerHTML = parseInt(Math.random()*10);
